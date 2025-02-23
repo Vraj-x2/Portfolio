@@ -77,7 +77,30 @@ body {
 .light-theme .project-info p {
     color: #444444;
 }
+/* ======================
+   SECTION HEADINGS
+   ====================== */
+   section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1.5px;
+    position: relative;
+    padding-bottom: 1rem;
+}
 
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
 /* ======================
    NAVIGATION
    ====================== */
@@ -283,13 +306,7 @@ section.visible {
     margin: 2rem auto;
 }
 
-#expertise h2 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 2.5rem;
-    letter-spacing: 1.5px;
-}
+
 
 .expertise-container {
     display: flex;
