@@ -1,0 +1,14 @@
+/* ======================
+   ANIMATIONS & EFFECTS
+   ====================== */
+   .animated-title {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animated-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
