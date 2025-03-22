@@ -1,15 +1,57 @@
+<!-- 1. Add skils section between expertise and projects section
+2. Add project dates (e.g., "Spring 2023" under each project title)
+3. Add a "View Project" button under each project card
+4. Professional Polish
+Create a custom favicon (use https://favicon.io/)
+5. Google Analytics integrated
+
+Resume PDF updated and tested
+
+6. 3-5 professional testimonials (even from peers/professors)
+7. 6. Pro Tips for Job Applications
+Customize the meta description for each job application:
+
+html
+Copy
+<meta name="description" content="Full-stack developer specializing in [Job Requirement] with X years of experience in [Mention Tech from Job Post]">
+
+
+ -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vraj Contractor - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vraj Contractor - Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Vraj Contractor - Software Engineer specializing in full-stack development and cloud solutions">
+
+    <link rel="stylesheet" href="css/Animation.css">
+<link rel="stylesheet" href="css/Avatar.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/ContactAndFooter.css">
+<link rel="stylesheet" href="css/NavAndIntro.css">
+<link rel="stylesheet" href="css/ProjectAndAbout.css">
+<link rel="stylesheet" href="css/Responsive.css">
+
+
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Google Analytics (Uncomment and replace GA_MEASUREMENT_ID with your ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
 </head>
 <body>
-    <!-- Intro Section -->
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Navigation and Intro -->
     <div class="intro-section">
         <nav>
             <div class="nav-container">
@@ -20,7 +62,6 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#expertise">Expertise</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -37,25 +78,32 @@
                 </div>
             </div>
             <h1 class="animated-title">Hi, my name is <span class="highlight">Vraj Contractor</span>.</h1>
-    <p class="animated-subtitle">I'm a <span id="typing-text"></span></p>
+            <p class="animated-subtitle">I'm a <span id="typing-text"></span></p>
         </div>
     </div>
 
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-image">
-                <img src="professional-headshot.jpg" alt="Vraj Contractor Professional Headshot" />
+                <img src="professional-headshot.jpg" alt="Vraj Contractor professional headshot wearing business casual attire">
             </div>
             <div class="about-text">
                 <p>Innovative Software Engineer passionate about creating elegant solutions.</p>
                 <p>With a robust background in Software Development and Network Engineering from Sheridan College, I specialize in transforming complex challenges into streamlined, efficient technologies.</p>
                 <p>My approach combines technical expertise with creative problem-solving, ensuring each project not only meets but exceeds expectations.</p>
+                <a href="https://drive.google.com/uc?export=download&id=1nccL9vOajE-tZgJaKoLroPQMCjAkIs9U" target="_blank" class="btn download-resume">
+                    <i class="fas fa-download"></i> Downlad Resume
+                </a>
+                
+                
+                
             </div>
         </div>
     </section>
 
-    <!-- Expertise -->
+    <!-- Expertise Section -->
     <section id="expertise">
         <h2>My Expertise</h2>
         <div class="expertise-container">
@@ -102,136 +150,92 @@
         </div>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Spring Boot Book Review App</h3>
-                    <p>A web application for managing book reviews with user authentication.</p>
-                    <div class="project-tech">
-                        <span>Spring Boot</span>
-                        <span>Thymeleaf</span>
-                        <span>H2 Database</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn">View Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-    
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Chess Clone</h3>
-                    <p>A two-player chess game with turn-based logic and piece movement mechanics.</p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn">Play Game</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-    
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Email/Messaging System</h3>
-                    <p>A web-based email system with user authentication and AJAX communication.</p>
-                    <div class="project-tech">
-                        <span>PHP</span>
-                        <span>JavaScript</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-    
-            <!-- Additional Project Cards -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Project Title 4</h3>
-                    <p>Description of Project 4 goes here.</p>
-                    <div class="project-tech">
-                        <span>Technology 1</span>
-                        <span>Technology 2</span>
-                        <span>Technology 3</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn">View Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-    
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Project Title 5</h3>
-                    <p>Description of Project 5 goes here.</p>
-                    <div class="project-tech">
-                        <span>Technology 1</span>
-                        <span>Technology 2</span>
-                        <span>Technology 3</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn">View Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-    
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Project Title 6</h3>
-                    <p>Description of Project 6 goes here.</p>
-                    <div class="project-tech">
-                        <span>Technology 1</span>
-                        <span>Technology 2</span>
-                        <span>Technology 3</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="btn">View Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-    
-        </div><!-- End of projects-container -->
-    </section><!-- End of projects section -->
 
-    <section id="testimonials">
-        <h2>What My Clients Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial-card active">
-                <p>"Vraj is an exceptional developer with a strong understanding of both front-end and back-end technologies. Highly recommended!"</p>
-                <cite>- Client Name 1</cite>
-            </div>
-            <div class="testimonial-card">
-                <p>"Working with Vraj was a great experience. His problem-solving skills are top-notch, and he delivers results on time."</p>
-                <cite>- Client Name 2</cite>
-            </div>
-            <div class="testimonial-card">
-                <p>"The project exceeded our expectations! Vraj's attention to detail and dedication made all the difference."</p>
-                <cite>- Client Name 3</cite>
-            </div>
-            <div class="testimonial-card">
-                <p>"I appreciate Vraj's ability to communicate complex ideas clearly. He is a true asset to any team."</p>
-                <cite>- Client Name 4</cite>
-            </div>
-    
-            <div class="testimonial-navigation">
-                <button class="prev">←</button>
-                <button class="next">→</button>
+    <!-- Projects Section -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <!-- Original Projects -->
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Spring Boot Book Review App</h3>
+                <p>A web application for managing book reviews with user authentication.</p>
+                <div class="project-tech">
+                    <span>Spring Boot</span>
+                    <span>Thymeleaf</span>
+                    <span>H2 Database</span>
+                </div>
             </div>
         </div>
-    </section>
 
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Chess Clone</h3>
+                <p>A two-player chess game with turn-based logic and piece movement mechanics.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>ShapeAnimator</h3>
+                <p>An interactive WPF application for animating shapes with collision detection, shooting mechanics, and power-ups.</p>
+                <div class="project-tech">
+                    <span>C#</span>
+                    <span>.NET</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Multiplayer Blackjack Game</h3>
+                <p>Developed a real-time multiplayer card game with deck management and turn-based mechanics using C# networking.</p>
+                <div class="project-tech">
+                    <span>C#</span>
+                    <span>.NET Core</span>
+                    <span>Socket Programming</span>
+                    <span>Multiplayer Architecture</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Charity Donation Management System</h3>
+                <p>Integrated SQL Server and Oracle databases with ETL processes, implementing star schema data mart and role-based security.</p>
+                <div class="project-tech">
+                    <span>SQL Server</span>
+                    <span>Oracle</span>
+                    <span>ETL Processes</span>
+                    <span>PL/SQL</span>
+                    <span>Data Modeling</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Full-Stack Retail Management System</h3>
+                <p>Integrated Spring Boot microservices with Angular front-end featuring JWT authentication and H2 database management.</p>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>Angular</span>
+                    <span>Spring Security</span>
+                    <span>REST API</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
     <section id="contact">
         <div class="contact-container">
             <div class="contact-info">
@@ -241,67 +245,81 @@
                 <div class="contact-details">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>vraj.contractor@email.com</span>
+                        <span>vrajcontractor20@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+1 (XXX) XXX-XXXX</span>
+                        <span>+1 (647) 868-7964</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Mississauga, Ontario, Canada</span>
+                        <span>Brampton, Ontario, Canada</span>
                     </div>
                 </div>
     
                 <div class="social-media">
-                    <a href="https://linkedin.com/in/vraj-contractor" target="_blank">
+                    <a href="https://linkedin.com/in/vraj-contractor" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/vraj-contractor" target="_blank">
+                    <a href="https://github.com/vraj-contractor" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://twitter.com/vraj_contractor" target="_blank">
+                    <a href="https://twitter.com/vraj_contractor" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </div>
             </div>
     
             <div class="contact-form">
-                <form>
+                <form id="contact-form" action="https://formspree.io/f/mjkgzlny" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
                     </div>
                     
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
                     </div>
                     
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
+                        <input type="text" id="subject" name="subject" required placeholder="Enter subject">
                     </div>
                     
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" rows="5" required placeholder="Type your message here"></textarea>
                     </div>
                     
+                    <div id="form-status" class="form-status"></div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Vraj Contractor</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/vraj-contractor" target="_blank">LinkedIn</a>
-            <a href="https://github.com/vraj-contractor" target="_blank">GitHub</a>
+        <div class="footer-content">
+            <p>&copy; 2024 Vraj Contractor. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="back-to-top" class="back-to-top">
+                <i class="fas fa-arrow-up"></i> Back to Top
+            </button>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/smoothScroll.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/typingEffect.js"></script>
+<script src="js/themeToggle.js"></script>
+<script src="js/contactForm.js"></script>
+
 </body>
 </html>

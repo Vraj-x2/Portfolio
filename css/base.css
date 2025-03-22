@@ -1,0 +1,79 @@
+/* ======================
+   BASE & GLOBAL STYLES
+   ====================== */
+   :root {
+    --primary-color: #ffcc00;
+    --dark-bg: #121212;
+    --light-bg: #f5f5f5;
+    --dark-text: #ffffff;
+    --light-text: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ======================
+   THEME TOGGLE
+   ====================== */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+/* Light theme styles */
+.light-theme {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+.light-theme .highlight {
+    color: #2a7ae2;
+}
+
+.light-theme section {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .expertise-column,
+.light-theme .project-card,
+.light-theme .contact-form {
+    background: rgba(245, 245, 245, 0.9);
+}
+
+.light-theme .expertise-column li,
+.light-theme .project-info p {
+    color: #444444;
+}

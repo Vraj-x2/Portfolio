@@ -1,5 +1,5 @@
 // Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
+document.querySelectorAll('.nav-links a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
@@ -10,125 +10,127 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
-// Intersection Observer to detect when a section is in view and add class for animation
+// Intersection Observer for section animations
 const sections = document.querySelectorAll('section');
-
-const observerCallback = (entries, observer) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
         }
     });
-};
+}, { threshold: 0.5 });
 
-const observer = new IntersectionObserver(observerCallback, { root: null, threshold: 0.5 });
 sections.forEach(section => observer.observe(section));
 
-// Testimonial Carousel Logic
-let currentTestimonialIndex = 0;
-const testimonials = [
-    '"Vraj is an exceptional developer with a strong understanding of both front-end and back-end technologies. Highly recommended!"',
-    '"Working with Vraj was a great experience. His problem-solving skills are top-notch, and he delivers results on time."'
-];
-
-const testimonialText = document.querySelector('.testimonial-card p');
-const testimonialCite = document.querySelector('.testimonial-card cite');
-
-document.querySelector('.next').addEventListener('click', () => {
-    currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
-    updateTestimonial();
-});
-
-document.querySelector('.prev').addEventListener('click', () => {
-    currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
-    updateTestimonial();
-});
-
-function updateTestimonial() {
-    testimonialText.textContent = testimonials[currentTestimonialIndex];
-    testimonialCite.textContent = `- Client Name ${currentTestimonialIndex + 1}`;
-}
-
+// Eye movement animation
 document.addEventListener('mousemove', (e) => {
     const eyes = document.querySelectorAll('.eye');
     eyes.forEach((eye) => {
         const rect = eye.getBoundingClientRect();
         const eyeCenterX = rect.left + rect.width / 2;
         const eyeCenterY = rect.top + rect.height / 2;
-
         const angle = Math.atan2(e.clientY - eyeCenterY, e.clientX - eyeCenterX);
-        const maxDistance = rect.width / 4; // Limit movement to 1/4 of eye width
+        const maxDistance = rect.width / 4;
         const distance = Math.min(maxDistance, Math.hypot(e.clientX - eyeCenterX, e.clientY - eyeCenterY));
-
-        const pupilX = Math.cos(angle) * distance;
-        const pupilY = Math.sin(angle) * distance;
-
+        
         const pupil = eye.querySelector('.pupil');
-        pupil.style.transform = `translate(calc(-50% + ${pupilX}px), calc(-50% + ${pupilY}px))`;
+        pupil.style.transform = `translate(calc(-50% + ${Math.cos(angle) * distance}px), 
+                               calc(-50% + ${Math.sin(angle) * distance}px)`;
     });
 });
 
-const mobileMenu = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-
-document.addEventListener('DOMContentLoaded', () => {
-    const testimonials = document.querySelectorAll('.testimonial-card');
-    const nextButton = document.querySelector('.next');
-    const prevButton = document.querySelector('.prev');
-    let currentIndex = 0;
- 
-    function showTestimonial(index) {
-        testimonials.forEach((card, i) => {
-            card.classList.remove('active');
-            if (i === index) {
-                card.classList.add('active');
-            }
-        });
-    }
- 
-    nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % testimonials.length; // Loop back to start
-        showTestimonial(currentIndex);
-    });
- 
-    prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length; // Loop back to end
-        showTestimonial(currentIndex);
-    });
- 
-    showTestimonial(currentIndex); // Show first testimonial initially
- });
-
-
-document.addEventListener('DOMContentLoaded', function() {
+// Typing effect
+const typingEffect = () => {
     const texts = ['Software Engineer', 'Front end Developer', 'Back end Developer'];
     const typingText = document.getElementById('typing-text');
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
 
-    function type() {
+    const type = () => {
         const currentText = texts[textIndex];
-        if (isDeleting) {
-            typingText.textContent = currentText.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            typingText.textContent = currentText.substring(0, charIndex + 1);
-            charIndex++;
-        }
+        typingText.textContent = isDeleting 
+            ? currentText.substring(0, charIndex - 1)
+            : currentText.substring(0, charIndex + 1);
+
+        isDeleting ? charIndex-- : charIndex++;
 
         if (!isDeleting && charIndex === currentText.length) {
             isDeleting = true;
-            setTimeout(type, 1500); // Wait before starting to delete
+            setTimeout(type, 1500);
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             textIndex = (textIndex + 1) % texts.length;
-            setTimeout(type, 500); // Wait before typing next text
+            setTimeout(type, 500);
         } else {
-            setTimeout(type, isDeleting ? 50 : 100); // Delete faster than type
+            setTimeout(type, isDeleting ? 50 : 100);
         }
-    }
+    };
+    type();
+};
 
-    type(); // Start the typing effect
-});
+// Theme toggle functionality
+const themeToggle = () => {
+    const themeButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    const moonIcon = themeButton.querySelector('.fa-moon');
+    const sunIcon = themeButton.querySelector('.fa-sun');
+
+    themeButton.addEventListener('click', () => {
+        body.classList.toggle('light-theme');
+        moonIcon.style.display = body.classList.contains('light-theme') ? 'none' : 'block';
+        sunIcon.style.display = body.classList.contains('light-theme') ? 'block' : 'none';
+    });
+};
+
+// Back to top button
+const backToTop = () => {
+    const button = document.getElementById('back-to-top');
     
+    window.addEventListener('scroll', () => {
+        button.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+};
+
+// Contact form handling
+const contactForm = () => {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                status.textContent = 'Message sent successfully!';
+                status.style.color = '#4CAF50';
+                form.reset();
+            } else {
+                throw await response.json();
+            }
+        } catch (error) {
+            status.textContent = 'Oops! There was a problem sending your message.';
+            status.style.color = '#ff4444';
+        }
+    });
+};
+
+// Initialize all functionality
+document.addEventListener('DOMContentLoaded', () => {
+    typingEffect();
+    themeToggle();
+    backToTop();
+    contactForm();
+});
