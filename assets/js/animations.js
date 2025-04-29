@@ -26,3 +26,29 @@ document.addEventListener('mousemove', (e) => {
                                calc(-50% + ${Math.sin(angle) * distance}px))`;
     });
 });
+
+
+document.getElementById('show-more-btn').addEventListener('click', function() {
+    var moreProjects = document.getElementById('more-projects');
+    if (moreProjects.style.display === 'none' || moreProjects.style.display === '') {
+        moreProjects.style.display = 'grid'; // it will now apply correctly
+        this.textContent = 'Show Less';
+    } else {
+        moreProjects.style.display = 'none';
+        this.textContent = 'Show More';
+    }
+});
+
+const showMoreBtn = document.getElementById('show-more-btn');
+const moreProjects = document.getElementById('more-projects');
+
+showMoreBtn.addEventListener('click', function() {
+    if (moreProjects.classList.contains('show')) {
+        moreProjects.classList.remove('show');
+        this.textContent = 'Show More';
+    } else {
+        moreProjects.classList.add('show');
+        this.textContent = 'Show Less';
+    }
+});
+

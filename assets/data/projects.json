@@ -1,0 +1,74 @@
+
+[
+    {
+      "title": "CampusConnect – Student Companion iOS App",
+      "date": "Spring 2024",
+      "description": "A Swift-based mobile app enabling students to manage events, navigate campus maps, join study groups, and plan courses.",
+      "tech": ["Swift", "UIKit", "MapKit", "CoreData", "Storyboard"],
+      "link": "https://github.com/Vraj-x2/campusconnect-ios-app"
+    },
+    {
+      "title": "Full-Stack Retail Management System",
+      "date": "Fall 2023",
+      "description": "Spring Boot microservices with Angular front-end featuring JWT authentication and database management.",
+      "tech": ["Spring Boot", "Angular", "Spring Security", "REST API"],
+      "link": "https://github.com/Vraj-x2/fullstack-retail-management"
+    },
+    {
+      "title": "Police Entity Microservice",
+      "date": "Spring 2024",
+      "description": "A RESTful Spring Boot microservice managing police entity data with secure CRUD operations and service layer architecture.",
+      "tech": ["Java", "Spring Boot", "REST API", "H2 Database", "Lombok"],
+      "link": "https://github.com/Vraj-x2/microservice-police"
+    },
+    {
+      "title": "Spring Boot Book Review App",
+      "date": "Spring 2023",
+      "description": "A web application for managing book reviews with user authentication.",
+      "tech": ["Spring Boot", "Thymeleaf", "H2 Database"],
+      "link": "https://github.com/Vraj-x2/book-review-app"
+    },
+    {
+      "title": "Chess Clone",
+      "date": "Fall 2022",
+      "description": "A two-player chess game with turn-based logic and piece movement mechanics.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "link": "https://github.com/Vraj-x2/chess-clone"
+    },
+    {
+      "title": "ShapeAnimator",
+      "date": "Fall 2022",
+      "description": "Interactive WPF application for animating shapes with collision detection, shooting mechanics, and power-ups.",
+      "tech": ["C#", ".NET"],
+      "link": "https://github.com/Vraj-x2/shape-animator"
+    },
+    {
+      "title": "Multiplayer Blackjack Game",
+      "date": "Winter 2023",
+      "description": "Real-time multiplayer card game with deck management and turn-based mechanics using C# networking.",
+      "tech": ["C#", ".NET Core", "Socket Programming", "Multiplayer Architecture"],
+      "link": "https://github.com/Vraj-x2/blackjack-multiplayer"
+    },
+    {
+      "title": "Charity Donation Management System",
+      "date": "Fall 2023",
+      "description": "Integrated SQL Server and Oracle databases with ETL processes, implementing star schema data mart and role-based security.",
+      "tech": ["SQL Server", "Oracle", "ETL", "PL/SQL", "Data Modeling"],
+      "link": "https://github.com/Vraj-x2/charity-donation-management"
+    },
+    {
+      "title": "Plushie Item Microservice",
+      "date": "Spring 2024",
+      "description": "Spring Boot microservice managing plushie sales inventory with CRUD operations and service-interface implementation.",
+      "tech": ["Spring Boot", "REST API", "H2 Database", "Lombok"],
+      "link": "https://github.com/Vraj-x2/microservice-plushie"
+    },
+    {
+      "title": "Gateway API Application",
+      "date": "Spring 2024",
+      "description": "Spring Boot Gateway service connecting multiple microservices and serving an Angular-based front-end with proxy API routing.",
+      "tech": ["Spring Boot", "REST Proxy", "Microservices", "Angular"],
+      "link": "https://github.com/Vraj-x2/microservice-gateway"
+    }
+  ]
+  

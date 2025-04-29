@@ -1,410 +1,228 @@
-<!-- 1. Add skils section between expertise and projects section
-2. Add project dates (e.g., "Spring 2023" under each project title)
-3. Add a "View Project" button under each project card
-4. Professional Polish
-Create a custom favicon (use https://favicon.io/)
-5. Google Analytics integrated
-
-Resume PDF updated and tested
-
-6. 3-5 professional testimonials (even from peers/professors)
-7. 6. Pro Tips for Job Applications
-Customize the meta description for each job application:
-
-html
-Copy
-<meta name="description" content="Full-stack developer specializing in [Job Requirement] with X years of experience in [Mention Tech from Job Post]">
-
-
- -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vraj Contractor - Software Engineer Portfolio</title>
-    <meta name="description" content="Portfolio of Vraj Contractor - Software Engineer specializing in full-stack development and cloud solutions">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vraj Contractor - Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Vraj Contractor - Software Engineer specializing in full-stack development and cloud solutions"/>
 
-    <link rel="stylesheet" href="css/Animation.css">
-    <link rel="stylesheet" href="css/Avatar.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/ContactAndFooter.css">
-    <link rel="stylesheet" href="css/NavAndIntro.css">
-    <link rel="stylesheet" href="css/ProjectAndAbout.css">
-    <link rel="stylesheet" href="css/Responsive.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/Animation.css" />
+  <link rel="stylesheet" href="assets/css/Avatar.css" />
+  <link rel="stylesheet" href="assets/css/NavAndIntro.css" />
+  <link rel="stylesheet" href="assets/css/ProjectAndAbout.css" />
+  <link rel="stylesheet" href="assets/css/ContactAndFooter.css" />
+  <link rel="stylesheet" href="assets/css/Responsive.css" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-
-
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
-    <!-- Google Analytics (Uncomment and replace GA_MEASUREMENT_ID with your ID) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+  <!-- Google Fonts + FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
-    <!-- Theme Toggle -->
-    <button id="theme-toggle" class="theme-toggle">
-        <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i>
-    </button>
 
-    <!-- Navigation and Intro -->
-    <div class="intro-section">
-        <nav>
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="#about">Vraj Contractor</a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#expertise">Expertise</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="intro-content">
-            <div class="avatar-container">
-                <div class="avatar">
-                    <div class="eye left">
-                        <div class="pupil"></div>
-                    </div>
-                    <div class="eye right">
-                        <div class="pupil"></div>
-                    </div>
-                </div>
-            </div>
-            <h1 class="animated-title">Hi, my name is <span class="highlight">Vraj Contractor</span>.</h1>
-            <p class="animated-subtitle">I'm a <span id="typing-text"></span></p>
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+  </button>
+
+  <!-- Navigation and Intro Section -->
+  <div class="intro-section">
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#about">Vraj Contractor</a>
         </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="intro-content">
+      <div class="avatar-container">
+        <div class="avatar">
+          <div class="eye left"><div class="pupil"></div></div>
+          <div class="eye right"><div class="pupil"></div></div>
+        </div>
+      </div>
+      <h1 class="animated-title">Hi, my name is <span class="highlight">Vraj Contractor</span>.</h1>
+      <p class="animated-subtitle">I'm a <span id="typing-text"></span></p>
     </div>
+  </div>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="professional-headshot.jpg" alt="Vraj Contractor professional headshot wearing business casual attire">
-            </div>
-            <div class="about-text">
-                <p>Innovative Software Engineer passionate about creating elegant solutions.</p>
-                <p>With a robust background in Software Development and Network Engineering from Sheridan College, I specialize in transforming complex challenges into streamlined, efficient technologies.</p>
-                <p>My approach combines technical expertise with creative problem-solving, ensuring each project not only meets but exceeds expectations.</p>
-                <a href="assets/docs/Resume_Fall.pdf" download class="btn download-resume">
-                    <i class="fas fa-download"></i> Download Resume
-                  </a>
-                  
-                
-                
-                
-            </div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="assets/images/professional-headshot.jpg" alt="Vraj Contractor professional headshot wearing business casual attire">
+      </div>
+      <div class="about-text">
+        <p>Innovative Software Engineer passionate about creating elegant solutions.</p>
+        <p>With a robust background in Software Development and Network Engineering from Sheridan College, I specialize in transforming complex challenges into streamlined, efficient technologies.</p>
+        <p>My approach combines technical expertise with creative problem-solving, ensuring each project not only meets but exceeds expectations.</p>
+        <a href="assets/docs/Resume_Fall.pdf" download class="btn download-resume">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise">
-        <h2>My Expertise</h2>
-        <div class="expertise-container">
-            <div class="expertise-column">
-                <h3>Languages</h3>
-                <ul>
-                    <li>Java (Advanced)</li>
-                    <li>JavaScript/TypeScript</li>
-                    <li>Python</li>
-                    <li>C#/.NET</li>
-                    <li>PHP</li>
-                </ul>
-            </div>
-            <div class="expertise-column">
-                <h3>Web Development</h3>
-                <ul>
-                    <li>React</li>
-                    <li>Angular</li>
-                    <li>Spring Boot</li>
-                    <li>jQuery</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div class="expertise-column">
-                <h3>Tools & IDEs</h3>
-                <ul>
-                    <li>Git</li>
-                    <li>Visual Studio</li>
-                    <li>Eclipse</li>
-                    <li>Android Studio</li>
-                    <li>Figma</li>
-                </ul>
-            </div>
-            <div class="expertise-column">
-                <h3>Infrastructure</h3>
-                <ul>
-                    <li>AWS</li>
-                    <li>Linux/Unix</li>
-                    <li>Windows Server</li>
-                    <li>Networking Protocols</li>
-                    <li>Docker</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <!-- Expertise Section -->
+  <section id="expertise">
+    <h2>My Expertise</h2>
+    <div class="expertise-container">
+      
+      <div class="expertise-column">
+        <h3>Languages</h3>
+        <ul>
+          <li>Java (Advanced)</li>
+          <li>JavaScript/TypeScript</li>
+          <li>Python</li>
+          <li>C#/.NET</li>
+          <li>PHP</li>
+        </ul>
+      </div>
 
-<!-- Projects Section -->
-<section id="projects">
+      <div class="expertise-column">
+        <h3>Web Development</h3>
+        <ul>
+          <li>React</li>
+          <li>Angular</li>
+          <li>Spring Boot</li>
+          <li>jQuery</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="expertise-column">
+        <h3>Tools & IDEs</h3>
+        <ul>
+          <li>Git</li>
+          <li>Visual Studio</li>
+          <li>Eclipse</li>
+          <li>Android Studio</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+
+      <div class="expertise-column">
+        <h3>Infrastructure</h3>
+        <ul>
+          <li>AWS</li>
+          <li>Linux/Unix</li>
+          <li>Windows Server</li>
+          <li>Networking Protocols</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
     <h2>My Projects</h2>
-    <div class="projects-container">
-
-        <!-- Old Projects -->
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Spring Boot Book Review App</h3>
-                <p class="project-date">Spring 2023</p>
-                <p>A web application for managing book reviews with user authentication.</p>
-                <div class="project-tech">
-                    <span>Spring Boot</span>
-                    <span>Thymeleaf</span>
-                    <span>H2 Database</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/book-review-app" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Chess Clone</h3>
-                <p class="project-date">Fall 2022</p>
-                <p>A two-player chess game with turn-based logic and piece movement mechanics.</p>
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/chess-clone" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>ShapeAnimator</h3>
-                <p class="project-date">Fall 2022</p>
-                <p>An interactive WPF application for animating shapes with collision detection, shooting mechanics, and power-ups.</p>
-                <div class="project-tech">
-                    <span>C#</span>
-                    <span>.NET</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/shape-animator" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Multiplayer Blackjack Game</h3>
-                <p class="project-date">Winter 2023</p>
-                <p>Developed a real-time multiplayer card game with deck management and turn-based mechanics using C# networking.</p>
-                <div class="project-tech">
-                    <span>C#</span>
-                    <span>.NET Core</span>
-                    <span>Socket Programming</span>
-                    <span>Multiplayer Architecture</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/blackjack-multiplayer" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Charity Donation Management System</h3>
-                <p class="project-date">Fall 2023</p>
-                <p>Integrated SQL Server and Oracle databases with ETL processes, implementing star schema data mart and role-based security.</p>
-                <div class="project-tech">
-                    <span>SQL Server</span>
-                    <span>Oracle</span>
-                    <span>ETL Processes</span>
-                    <span>PL/SQL</span>
-                    <span>Data Modeling</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/charity-donation-management" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Full-Stack Retail Management System</h3>
-                <p class="project-date">Fall 2023</p>
-                <p>Integrated Spring Boot microservices with Angular front-end featuring JWT authentication and H2 database management.</p>
-                <div class="project-tech">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Angular</span>
-                    <span>Spring Security</span>
-                    <span>REST API</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/fullstack-retail-management" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <!-- New Projects -->
-        <div class="project-card">
-            <div class="project-info">
-                <h3>CampusConnect – Student Companion iOS App</h3>
-                <p class="project-date">Spring 2024</p>
-                <p>A Swift-based mobile app enabling students to manage events, navigate campus maps, join study groups, and plan courses, maintained individually for future cloud expansion.</p>
-                <div class="project-tech">
-                    <span>Swift</span>
-                    <span>UIKit</span>
-                    <span>MapKit</span>
-                    <span>CoreData</span>
-                    <span>Storyboard</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/campusconnect-ios-app" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Police Entity Microservice</h3>
-                <p class="project-date">Spring 2024</p>
-                <p>A RESTful Spring Boot microservice that manages police entity data with secure CRUD operations and service layer architecture.</p>
-                <div class="project-tech">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>REST API</span>
-                    <span>H2 Database</span>
-                    <span>Lombok</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/microservice-police" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Plushie Item Microservice</h3>
-                <p class="project-date">Spring 2024</p>
-                <p>A Spring Boot microservice managing plushie sales inventory with CRUD operations, item purchase tracking, and service-interface implementation.</p>
-                <div class="project-tech">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>REST API</span>
-                    <span>H2 Database</span>
-                    <span>Lombok</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/microservice-plushie" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-info">
-                <h3>Gateway API Application</h3>
-                <p class="project-date">Spring 2024</p>
-                <p>A Spring Boot Gateway service connecting multiple microservices and serving an Angular-based front-end with proxy API routing for seamless integration.</p>
-                <div class="project-tech">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Angular</span>
-                    <span>REST Proxy</span>
-                    <span>Microservices</span>
-                </div>
-                <a href="https://github.com/Vraj-x2/microservice-gateway" target="_blank" class="view-project-btn">View Project</a>
-            </div>
-        </div>
-
+    <div class="projects-container" id="projects-container">
+      <!-- Projects will be loaded dynamically from projects.json -->
     </div>
-</section>
 
+    <div class="show-more-container">
+      <button id="show-more-btn" class="view-project-btn">Show More</button>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p>Have a project in mind or want to collaborate? I'm always open to interesting opportunities.</p>
 
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Let's Connect</h2>
-                <p>Have a project in mind or want to collaborate? I'm always open to interesting opportunities.</p>
-                
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>vrajcontractor20@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+1 (647) 868-7964</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Brampton, Ontario, Canada</span>
-                    </div>
-                </div>
-    
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/vraj20/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Vraj-x2" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <!-- <a href="https://twitter.com/vraj_contractor" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-twitter"></i>
-                    </a> -->
-                </div>
-            </div>
-    
-            <div class="contact-form">
-                <form id="contact-form" action="https://formspree.io/f/mjkgzlny" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your name">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Enter subject">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Type your message here"></textarea>
-                    </div>
-                    
-                    <div id="form-status" class="form-status"></div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>vrajcontractor20@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (647) 868-7964</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Brampton, Ontario, Canada</span>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Vraj Contractor. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <button id="back-to-top" class="back-to-top">
-                <i class="fas fa-arrow-up"></i> Back to Top
-            </button>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/vraj20/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Vraj-x2" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-    </footer>
+      </div>
 
-    <script src="js/smoothScroll.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/typingEffect.js"></script>
-<script src="js/themeToggle.js"></script>
-<script src="js/contactForm.js"></script>
+      <div class="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/mjkgzlny" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Enter subject">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Type your message here"></textarea>
+          </div>
+          
+          <div id="form-status" class="form-status"></div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Vraj Contractor. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i> Back to Top
+      </button>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/smoothScroll.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/typingEffect.js"></script>
+  <script src="assets/js/themeToggle.js"></script>
+  <script src="assets/js/contactForm.js"></script>
+  <script src="assets/js/loadProjects.js"></script> <!-- <-- NEW script for loading projects -->
 </body>
 </html>
