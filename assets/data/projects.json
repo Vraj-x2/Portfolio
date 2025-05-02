@@ -4,7 +4,7 @@
     "date": "Spring 2025",
     "description": "AI-integrated web app that fetches movie details via OMDb API and provides Gemini-powered movie recommendations.",
     "tech": ["Spring Boot", "Thymeleaf", "Gemini AI", "OMDb API", "OkHttp"],
-    "link": "https://github.com/Vraj-x2/movie-explorer-ai"
+    "link": "https://github.com/Vraj-x2/movie-explorer"
   },
   {
     "title": "Full-Stack Retail Management System",
