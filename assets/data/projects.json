@@ -6,13 +6,7 @@
     "tech": ["Spring Boot", "Thymeleaf", "Gemini AI", "OMDb API", "OkHttp"],
     "link": "https://github.com/Vraj-x2/movie-explorer"
   },
-  {
-    "title": "Full-Stack Retail Management System",
-    "date": "Fall 2023",
-    "description": "Spring Boot microservices with Angular front-end featuring JWT authentication and database management.",
-    "tech": ["Spring Boot", "Angular", "Spring Security", "REST API"],
-    "link": "https://github.com/Vraj-x2/fullstack-retail-management"
-  },
+ 
   {
     "title": "Gateway API Application",
     "date": "Spring 2024",
