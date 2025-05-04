@@ -6,7 +6,13 @@
     "tech": ["Spring Boot", "Thymeleaf", "Gemini AI", "OMDb API", "OkHttp"],
     "link": "https://github.com/Vraj-x2/movie-explorer"
   },
- 
+  {
+    "title": "Full-Stack Retail Management System",
+    "date": "Fall 2023",
+    "description": "Spring Boot microservices with Angular front-end featuring JWT authentication and database management.",
+    "tech": ["Spring Boot", "Angular", "Spring Security", "REST API"],
+    "link": "https://github.com/Vraj-x2/fullstack-retail-management"
+  },
   {
     "title": "Gateway API Application",
     "date": "Spring 2024",
@@ -62,12 +68,5 @@
     "description": "A two-player chess game with turn-based logic and piece movement mechanics.",
     "tech": ["HTML", "CSS", "JavaScript"],
     "link": "https://github.com/Vraj-x2/chess-clone"
-  },
-  {
-    "title": "Charity Donation Management System",
-    "date": "Fall 2023",
-    "description": "Integrated SQL Server and Oracle databases with ETL processes, implementing star schema data mart and role-based security.",
-    "tech": ["SQL Server", "Oracle", "ETL", "PL/SQL", "Data Modeling"],
-    "link": "https://github.com/Vraj-x2/charity-donation-management"
   }
 ]
