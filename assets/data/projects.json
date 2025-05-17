@@ -1,5 +1,13 @@
 [
   {
+  "title": "News AI – Smart Email-Based News Aggregator",
+  "date": "Spring 2025",
+  "description": "A full-stack Spring Boot application that aggregates news from 5+ APIs (GNews, NewsAPI, Reddit, NYTimes, AlphaVantage), filters and summarizes using Gemini AI, and sends a curated top 5 list to user emails with clickable links and summaries.",
+  "tech": ["Spring Boot", "Gemini AI", "Java Mail", "REST API", "Thymeleaf", "GNews", "Reddit API", "NYTimes API", "AlphaVantage", "NewsAPI"],
+  "link": "https://github.com/Vraj-x2/news-ai"
+}
+,
+  {
     "title": "Movie Explorer – OMDb + Gemini AI",
     "date": "Spring 2025",
     "description": "AI-integrated web app that fetches movie details via OMDb API and provides Gemini-powered movie recommendations.",
