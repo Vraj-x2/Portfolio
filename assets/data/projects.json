@@ -1,5 +1,13 @@
 [
-  {
+ 
+ {
+  "title": "Institutional Space & Resource Management Platform (Capstone Project)",
+  "date": "Fall 2025",
+  "description": "A full-stack platform for managing campus spaces, room and locker reservations, and user communication. Features include real-time chat via WebSocket, secure JWT authentication, and admin dashboards for analytics and scheduling.",
+  "tech": ["React", "Vite", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "WebSocket", "JWT", "Docker", "REST API"],
+  "link": "https://github.com/Vraj-x2/capstone-frontend"
+},
+ {
   "title": "News AI – Smart Email-Based News Aggregator",
   "date": "Spring 2025",
   "description": "A full-stack Spring Boot application that aggregates news from 5+ APIs (GNews, NewsAPI, Reddit, NYTimes, AlphaVantage), filters and summarizes using Gemini AI, and sends a curated top 5 list to user emails with clickable links and summaries.",
