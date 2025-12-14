@@ -1,40 +1,34 @@
+// Typing effect
 const typingEffect = () => {
-  const el = document.getElementById('typing-text');
-  if (!el) return;
+    const texts = [
+        'Full Stack Java Developer',
+        'Spring Boot & React Engineer',
+        'Software Engineering Graduate'
+    ];
+   
+    const typingText = document.getElementById('typing-text');
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
 
-  const texts = [
-    'Full Stack Java Developer',
-    'Spring Boot & React Engineer',
-    'Software Engineering Graduate'
-  ];
+    const type = () => {
+        const currentText = texts[textIndex];
+        typingText.textContent = isDeleting 
+            ? currentText.substring(0, charIndex - 1)
+            : currentText.substring(0, charIndex + 1);
 
-  let textIndex = 0;
-  let charIndex = 0;
-  let deleting = false;
+        isDeleting ? charIndex-- : charIndex++;
 
-  const type = () => {
-    const current = texts[textIndex];
-    el.textContent = deleting
-      ? current.slice(0, --charIndex)
-      : current.slice(0, ++charIndex);
-
-    if (!deleting && charIndex === current.length) {
-      deleting = true;
-      setTimeout(type, 1200);
-    } else if (deleting && charIndex === 0) {
-      deleting = false;
-      textIndex = (textIndex + 1) % texts.length;
-      setTimeout(type, 400);
-    } else {
-      setTimeout(type, deleting ? 60 : 100);
-    }
-  };
-
-  type();
+        if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(type, 1500);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(type, 500);
+        } else {
+            setTimeout(type, isDeleting ? 50 : 100);
+        }
+    };
+    type();
 };
-
-document.addEventListener('DOMContentLoaded', () => {
-  typingEffect();
-  themeToggle();
-  contactForm();
-});
