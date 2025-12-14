@@ -102,6 +102,11 @@
   align-self: flex-start;
 }
 
+.project-card.hidden {
+  display: none;
+}
+
+
 /* ======================
    EXPERTISE CARDS
    ====================== */

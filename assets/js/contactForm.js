@@ -1,51 +1,26 @@
-// Back to top button
-const backToTop = () => {
-    const button = document.getElementById('back-to-top');
-    
-    window.addEventListener('scroll', () => {
-        button.style.display = window.scrollY > 300 ? 'block' : 'none';
-    });
-
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-};
-
-// Contact form handling
 const contactForm = () => {
-    const form = document.getElementById('contact-form');
-    const status = document.getElementById('form-status');
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+  if (!form || !status) return;
 
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const formData = new FormData(form);
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    status.textContent = 'Sending...';
 
-        try {
-            const response = await fetch(form.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            });
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
 
-            if (response.ok) {
-                status.textContent = 'Message sent successfully!';
-                status.style.color = '#4CAF50';
-                form.reset();
-            } else {
-                throw await response.json();
-            }
-        } catch (error) {
-            status.textContent = 'Oops! There was a problem sending your message.';
-            status.style.color = '#ff4444';
-        }
-    });
+      if (!res.ok) throw new Error();
+      status.textContent = 'Message sent successfully!';
+      status.className = 'form-success';
+      form.reset();
+    } catch {
+      status.textContent = 'Failed to send message.';
+      status.className = 'form-error';
+    }
+  });
 };
-
-// Initialize all functionality
-document.addEventListener('DOMContentLoaded', () => {
-    typingEffect();
-    themeToggle();
-    backToTop();
-    contactForm();
-});
