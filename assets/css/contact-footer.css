@@ -1,0 +1,120 @@
+/* ======================
+   CONTACT SECTION
+   ====================== */
+.contact-info p {
+  margin-bottom: 1.2rem;
+  color: #e0e0e0;
+}
+
+.contact-details {
+  margin-top: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.contact-item i {
+  color: var(--primary-color);
+}
+
+/* ======================
+   CONTACT FORM
+   ====================== */
+.contact-form form {
+  width: 100%;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #cccccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  margin-bottom: 0.9rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: rgba(50, 50, 50, 0.8);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--primary-color);
+  background: rgba(60, 60, 60, 0.9);
+}
+
+/* ======================
+   FOOTER
+   ====================== */
+footer {
+  margin-top: 4rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #cccccc;
+}
+
+.footer-links {
+  margin-top: 0.8rem;
+}
+
+.footer-links a {
+  margin: 0 0.6rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: transparent;
+}
+
+/* ======================
+   SOCIAL ICONS (FOOTER / CONTACT)
+   ====================== */
+.social-media {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-media a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.social-media a:hover {
+  background: var(--primary-color);
+  color: #1e1e1e;
+  transform: translateY(-2px);
+}

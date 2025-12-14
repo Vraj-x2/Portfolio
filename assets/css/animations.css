@@ -1,0 +1,61 @@
+/* ======================
+   KEYFRAMES
+   ====================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ======================
+   HERO TEXT ANIMATIONS
+   ====================== */
+.animated-title {
+  font-size: 3rem;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.animated-subtitle {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* ======================
+   SECTION REVEAL
+   ====================== */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======================
+   TYPING CURSOR
+   ====================== */
+#typing-text::after {
+  content: '|';
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}

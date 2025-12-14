@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vraj Contractor - Software Engineer Portfolio</title>
-  <meta name="description" content="Portfolio of Vraj Contractor - Software Engineer specializing in full-stack development and cloud solutions"/>
+
+  <title>Vraj Contractor | Full Stack Java Developer</title>
+
+  <meta
+    name="description"
+    content="Vraj Contractor is a Software Engineering graduate specializing in Spring Boot, React, and scalable full-stack web applications."
+  />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/Animation.css" />
-  <link rel="stylesheet" href="assets/css/Avatar.css" />
-  <link rel="stylesheet" href="assets/css/NavAndIntro.css" />
-  <link rel="stylesheet" href="assets/css/ProjectAndAbout.css" />
-  <link rel="stylesheet" href="assets/css/ContactAndFooter.css" />
-  <link rel="stylesheet" href="assets/css/Responsive.css" />
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="assets/css/layout.css" />
+<link rel="stylesheet" href="assets/css/components.css" />
+<link rel="stylesheet" href="assets/css/sections.css" />
+<link rel="stylesheet" href="assets/css/animations.css" />
+<link rel="stylesheet" href="assets/css/responsive.css" />
+<link rel="stylesheet" href="assets/css/contact-footer.css" />
+
+
 
   <!-- Google Fonts + FontAwesome -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
@@ -52,23 +58,54 @@
           <div class="eye right"><div class="pupil"></div></div>
         </div>
       </div>
-      <h1 class="animated-title">Hi, my name is <span class="highlight">Vraj Contractor</span>.</h1>
-      <p class="animated-subtitle">I'm a <span id="typing-text"></span></p>
+
+      <h1 class="animated-title">
+        Hi, my name is <span class="highlight">Vraj Contractor</span>.
+      </h1>
+
+      <!-- Strong static value statement -->
+      <p class="animated-subtitle">
+        I build scalable full stack applications using Spring Boot and React.
+      </p>
+
+      <!-- Typing effect -->
+      <p class="animated-subtitle">
+        <span id="typing-text"></span>
+      </p>
+
+      <!-- Quick CTA -->
+      <div style="margin-top: 1.5rem;">
+        <a href="#projects" class="view-project-btn">View My Work</a>
+        <a href="assets/docs/Resume_Fall.pdf" class="view-project-btn" style="margin-left: 0.75rem;">
+          Download Resume
+        </a>
+      </div>
     </div>
   </div>
-
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <div class="about-content">
       <div class="about-image">
-        <img src="assets\images\professional-headshot.jpg" alt="Vraj Contractor">
+        <img src="assets/images/professional-headshot.jpg" alt="Vraj Contractor professional headshot">
       </div>
+
       <div class="about-text">
-        <p>Innovative Software Engineer passionate about creating elegant solutions.</p>
-        <p>With a robust background in Software Development and Network Engineering from Sheridan College, I specialize in transforming complex challenges into streamlined, efficient technologies.</p>
-        <p>My approach combines technical expertise with creative problem-solving, ensuring each project not only meets but exceeds expectations.</p>
+        <p>
+          Software Engineering graduate from Sheridan College (Dec 2025) specializing in
+          full stack development using Spring Boot, React, and Angular.
+        </p>
+
+        <p>
+          Hands on experience building REST APIs, microservices, real time applications,
+          and AI integrated systems with a strong focus on clean architecture and scalability.
+        </p>
+
+        <p>
+          Actively seeking entry level or junior software developer roles in Canada.
+        </p>
+
         <a href="assets/docs/Resume_Fall.pdf" download class="btn download-resume">
           <i class="fas fa-download"></i> Download Resume
         </a>
@@ -76,53 +113,45 @@
     </div>
   </section>
 
-
   <!-- Expertise Section -->
   <section id="expertise">
     <h2>My Expertise</h2>
     <div class="expertise-container">
-      
+
       <div class="expertise-column">
         <h3>Languages</h3>
         <ul>
-          <li>Java (Advanced)</li>
-          <li>JavaScript/TypeScript</li>
+          <li>Java</li>
+          <li>JavaScript / TypeScript</li>
           <li>Python</li>
-          <li>C#/.NET</li>
-          <li>PHP</li>
         </ul>
       </div>
 
       <div class="expertise-column">
-        <h3>Web Development</h3>
+        <h3>Backend</h3>
+        <ul>
+          <li>Spring Boot</li>
+          <li>REST APIs</li>
+          <li>Microservices</li>
+          <li>JWT and Spring Security</li>
+        </ul>
+      </div>
+
+      <div class="expertise-column">
+        <h3>Frontend</h3>
         <ul>
           <li>React</li>
           <li>Angular</li>
-          <li>Spring Boot</li>
-          <li>jQuery</li>
-          <li>Bootstrap</li>
+          <li>HTML and CSS</li>
         </ul>
       </div>
 
       <div class="expertise-column">
-        <h3>Tools & IDEs</h3>
+        <h3>DevOps and Tools</h3>
         <ul>
-          <li>Git</li>
-          <li>Visual Studio</li>
-          <li>Eclipse</li>
-          <li>Android Studio</li>
-          <li>Figma</li>
-        </ul>
-      </div>
-
-      <div class="expertise-column">
-        <h3>Infrastructure</h3>
-        <ul>
-          <li>AWS</li>
-          <li>Linux/Unix</li>
-          <li>Windows Server</li>
-          <li>Networking Protocols</li>
           <li>Docker</li>
+          <li>AWS</li>
+          <li>Git</li>
         </ul>
       </div>
 
@@ -133,7 +162,7 @@
   <section id="projects">
     <h2>My Projects</h2>
     <div class="projects-container" id="projects-container">
-      <!-- Projects will be loaded dynamically from projects.json -->
+      <!-- Projects loaded dynamically -->
     </div>
 
     <div class="show-more-container">
@@ -144,9 +173,12 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="contact-container">
+
       <div class="contact-info">
         <h2>Let's Connect</h2>
-        <p>Have a project in mind or want to collaborate? I'm always open to interesting opportunities.</p>
+        <p>
+          Open to entry level and junior software developer opportunities.
+        </p>
 
         <div class="contact-details">
           <div class="contact-item">
@@ -179,39 +211,42 @@
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required placeholder="Enter your name">
           </div>
-          
+
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="Enter your email">
           </div>
-          
+
           <div class="form-group">
             <label for="subject">Subject</label>
             <input type="text" id="subject" name="subject" required placeholder="Enter subject">
           </div>
-          
+
           <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required placeholder="Type your message here"></textarea>
           </div>
-          
+
           <div id="form-status" class="form-status"></div>
           <button type="submit" class="submit-btn">Send Message</button>
         </form>
       </div>
+
     </div>
   </section>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>&copy; 2024 Vraj Contractor. All rights reserved.</p>
+      <p>&copy; 2025 Vraj Contractor. All rights reserved.</p>
+
       <div class="footer-links">
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
+
       <button id="back-to-top" class="back-to-top">
         <i class="fas fa-arrow-up"></i> Back to Top
       </button>
@@ -225,6 +260,7 @@
   <script src="assets/js/typingEffect.js"></script>
   <script src="assets/js/themeToggle.js"></script>
   <script src="assets/js/contactForm.js"></script>
-  <script src="assets/js/loadProjects.js"></script> <!-- <-- NEW script for loading projects -->
+  <script src="assets/js/loadProjects.js"></script>
+
 </body>
 </html>

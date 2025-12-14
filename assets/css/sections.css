@@ -1,0 +1,129 @@
+/* ======================
+   SECTION HEADINGS
+   ====================== */
+section h2 {
+  font-size: 2.4rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  width: 70px;
+  height: 3px;
+  background: var(--primary-color);
+  display: block;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+/* ======================
+   ABOUT SECTION
+   ====================== */
+#about {
+  max-width: 1200px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+/* ======================
+   EXPERTISE SECTION
+   ====================== */
+#expertise {
+  max-width: 1200px;
+}
+
+.expertise-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* ======================
+   PROJECTS SECTION
+   ====================== */
+#projects {
+  max-width: 1600px;
+  width: 90%;
+  padding-bottom: 2rem;
+}
+
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* ======================
+   CONTACT SECTION
+   ====================== */
+#contact {
+  max-width: 1200px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+/* ======================
+   PROJECTS – VISUAL UPGRADE
+   ====================== */
+#projects {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 30, 30, 0.9),
+    rgba(20, 20, 20, 0.9)
+  );
+}
+
+.show-more-container {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+/* ======================
+   CONTACT – PREMIUM LAYOUT
+   ====================== */
+#contact {
+  background: linear-gradient(
+    160deg,
+    rgba(30, 30, 30, 0.95),
+    rgba(18, 18, 18, 0.95)
+  );
+}
+
+.contact-container {
+  align-items: center;
+}

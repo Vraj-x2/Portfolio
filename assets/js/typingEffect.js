@@ -1,6 +1,11 @@
 // Typing effect
 const typingEffect = () => {
-    const texts = ['Software Engineer', 'Front end Developer', 'Back end Developer'];
+    const texts = [
+  'Full Stack Java Developer',
+  'Spring Boot & React Engineer',
+  'Software Engineering Graduate'
+];
+   
     const typingText = document.getElementById('typing-text');
     let textIndex = 0;
     let charIndex = 0;

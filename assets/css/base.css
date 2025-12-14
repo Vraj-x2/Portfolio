@@ -1,79 +1,138 @@
 /* ======================
-   BASE & GLOBAL STYLES
+   BACKGROUND DEPTH LAYER
    ====================== */
-   :root {
-    --primary-color: #ffcc00;
-    --dark-bg: #121212;
-    --light-bg: #f5f5f5;
-    --dark-text: #ffffff;
-    --light-text: #333333;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--dark-bg);
-    color: var(--dark-text);
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    transition: background-color 0.3s ease, color 0.3s ease;
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(255, 204, 0, 0.06),
+      transparent 60%
+    );
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* ======================
-   THEME TOGGLE
+   CSS VARIABLES & THEME
+   ====================== */
+:root {
+  --primary-color: #ffcc00;
+
+  --dark-bg: #121212;
+  --light-bg: #f5f5f5;
+
+  --dark-text: #ffffff;
+  --light-text: #333333;
+
+  /* Shadow system (calm + professional) */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+}
+
+/* ======================
+   GLOBAL RESET
+   ====================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  overflow-x: hidden;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ======================
+   SHARED SECTION STYLE
+   ====================== */
+section {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 3.5rem 2rem;
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ======================
+   TYPOGRAPHY
+   ====================== */
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #d8d8d8;
+}
+
+
+.highlight {
+  color: var(--primary-color);
+}
+
+/* ======================
+   THEME TOGGLE BUTTON
    ====================== */
 .theme-toggle {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: var(--primary-color);
-    color: var(--dark-bg);
-    border: none;
-    padding: 1rem;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-xs);
 }
 
 .theme-toggle .fa-sun {
-    display: none;
+  display: none;
 }
 
-/* Light theme styles */
+/* ======================
+   LIGHT THEME OVERRIDES
+   ====================== */
 .light-theme {
-    background-color: var(--light-bg);
-    color: var(--light-text);
-}
-
-.light-theme .highlight {
-    color: #2a7ae2;
+  background-color: var(--light-bg);
+  color: var(--light-text);
 }
 
 .light-theme section {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.light-theme .expertise-column,
-.light-theme .project-card,
-.light-theme .contact-form {
-    background: rgba(245, 245, 245, 0.9);
+.light-theme p {
+  color: #444444;
 }
 
-.light-theme .expertise-column li,
-.light-theme .project-info p {
-    color: #444444;
+.light-theme .highlight {
+  color: #2a7ae2;
 }
