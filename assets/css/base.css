@@ -5,6 +5,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
+  
   background:
     radial-gradient(
       circle at top center,
@@ -14,6 +15,14 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+
+body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 204, 0, 0.04), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(255, 204, 0, 0.03), transparent 40%),
+    #121212;
+}
+
 
 /* ======================
    CSS VARIABLES & THEME
