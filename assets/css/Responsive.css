@@ -11,6 +11,10 @@
    TABLET
    ====================== */
 @media (max-width: 1024px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.75rem;
@@ -36,6 +40,10 @@
     margin-top: 1rem;
   }
 
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .about-content {
     flex-direction: column;
     text-align: center;
@@ -51,6 +59,16 @@
 
   .contact-container {
     flex-direction: column;
+  }
+
+  .section-heading-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-heading-row .section-subtitle {
+    text-align: left;
+    max-width: none;
   }
 
   .theme-toggle {
@@ -72,6 +90,10 @@
 @media (max-width: 480px) {
   section {
     padding: 2.5rem 1.5rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
   }
 
   .animated-title {

@@ -13,21 +13,19 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/base.css" />
-<link rel="stylesheet" href="assets/css/layout.css" />
-<link rel="stylesheet" href="assets/css/components.css" />
-<link rel="stylesheet" href="assets/css/sections.css" />
-<link rel="stylesheet" href="assets/css/animations.css" />
-<link rel="stylesheet" href="assets/css/responsive.css" />
-<link rel="stylesheet" href="assets/css/contact-footer.css" />
-
-
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/contact-footer.css" />
 
   <!-- Google Fonts + FontAwesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
-<body>
+<body id="top">
 
   <!-- Theme Toggle Button -->
   <button id="theme-toggle" class="theme-toggle">
@@ -37,6 +35,8 @@
 
   <!-- Navigation and Intro Section -->
   <div class="intro-section">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
     <nav>
       <div class="nav-container">
         <div class="logo">
@@ -52,33 +52,70 @@
     </nav>
 
     <div class="intro-content">
-      <div class="avatar-container">
-        <div class="avatar">
-          <div class="eye left"><div class="pupil"></div></div>
-          <div class="eye right"><div class="pupil"></div></div>
+      <div class="intro-grid">
+        <div class="hero-left">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            Open to Junior & Entry-Level Roles in Canada
+          </div>
+          <h1 class="animated-title">
+            Hi, I'm <span class="highlight">Vraj Contractor</span>.
+          </h1>
+          <p class="animated-subtitle hero-lead">
+            I build scalable full stack applications using Spring Boot and React.
+          </p>
+          <p class="animated-subtitle hero-typing">
+            <span id="typing-text"></span>
+          </p>
+
+          <div class="hero-tags">
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>REST APIs</span>
+            <span>Microservices</span>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="view-project-btn">View My Work</a>
+            <a href="assets/docs/Resume_Fall.pdf" class="ghost-btn" download>
+              Download Resume
+            </a>
+          </div>
         </div>
-      </div>
 
-      <h1 class="animated-title">
-        Hi, my name is <span class="highlight">Vraj Contractor</span>.
-      </h1>
+        <div class="hero-right">
+          <div class="hero-card spotlight-card">
+            <div class="hero-visual">
+              <div class="visual-glow"></div>
+              <div class="visual-core"></div>
+              <div class="visual-ring ring-1"></div>
+              <div class="visual-ring ring-2"></div>
+              <div class="visual-pulse"></div>
+            </div>
+            <div class="hero-card-text">
+              <p class="card-label">Featured build</p>
+              <p class="card-title">Real-time campus platform with analytics dashboards, chat, and scheduling.</p>
+              <div class="mini-tags">
+                <span>WebSocket</span><span>JWT</span><span>React + Spring Boot</span>
+              </div>
+            </div>
+          </div>
 
-      <!-- Strong static value statement -->
-      <p class="animated-subtitle">
-        I build scalable full stack applications using Spring Boot and React.
-      </p>
-
-      <!-- Typing effect -->
-      <p class="animated-subtitle">
-        <span id="typing-text"></span>
-      </p>
-
-      <!-- Quick CTA -->
-      <div style="margin-top: 1.5rem;">
-        <a href="#projects" class="view-project-btn">View My Work</a>
-        <a href="assets/docs/Resume_Fall.pdf" class="view-project-btn" style="margin-left: 0.75rem;">
-          Download Resume
-        </a>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-number">12</span>
+              <span class="stat-label">End-to-end builds</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number">Realtime</span>
+              <span class="stat-label">WebSocket & streaming</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" id="stat-dynamic-number">Cloud+</span>
+              <span class="stat-label" id="stat-dynamic-label">Docker / AWS basics</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -86,6 +123,7 @@
   <!-- About Section -->
 <section id="about">
   <h2>About Me</h2>
+  <p class="section-subtitle">Full-stack engineer focused on reliable APIs, realtime experiences, and thoughtful UI.</p>
 
   <div class="about-content">
     <div class="about-image">
@@ -107,6 +145,12 @@
         Actively seeking entry-level or junior software developer roles in Canada.
       </p>
 
+      <div class="about-badges">
+        <div class="badge-chip"><i class="fas fa-map-marker-alt"></i><span>Brampton, Ontario</span></div>
+        <div class="badge-chip"><i class="fas fa-bolt"></i><span>Spring Boot + React</span></div>
+        <div class="badge-chip"><i class="fas fa-user-check"></i><span>Open to junior roles</span></div>
+      </div>
+
       <a href="assets/docs/Resume_Fall.pdf" class="btn download-resume" download>
         Download Resume
       </a>
@@ -118,11 +162,13 @@
   <!-- Expertise Section -->
   <section id="expertise">
     <h2>My Expertise</h2>
+    <p class="section-subtitle">Stack coverage from backend architecture to polished front-ends and delivery.</p>
     <div class="expertise-container">
 
       <div class="expertise-column">
+        <div class="expertise-icon"><i class="fas fa-code"></i></div>
         <h3>Languages</h3>
-        <ul>
+        <ul class="expertise-tags">
           <li>Java</li>
           <li>JavaScript / TypeScript</li>
           <li>Python</li>
@@ -130,8 +176,9 @@
       </div>
 
       <div class="expertise-column">
+        <div class="expertise-icon"><i class="fas fa-server"></i></div>
         <h3>Backend</h3>
-        <ul>
+        <ul class="expertise-tags">
           <li>Spring Boot</li>
           <li>REST APIs</li>
           <li>Microservices</li>
@@ -140,8 +187,9 @@
       </div>
 
       <div class="expertise-column">
+        <div class="expertise-icon"><i class="fas fa-laptop-code"></i></div>
         <h3>Frontend</h3>
-        <ul>
+        <ul class="expertise-tags">
           <li>React</li>
           <li>Angular</li>
           <li>HTML and CSS</li>
@@ -149,8 +197,9 @@
       </div>
 
       <div class="expertise-column">
+        <div class="expertise-icon"><i class="fas fa-cubes"></i></div>
         <h3>DevOps and Tools</h3>
-        <ul>
+        <ul class="expertise-tags">
           <li>Docker</li>
           <li>AWS</li>
           <li>Git</li>
@@ -163,6 +212,7 @@
   <!-- Projects Section -->
   <section id="projects">
     <h2>My Projects</h2>
+    <div class="projects-aurora"></div>
     <div class="projects-container" id="projects-container">
       <!-- Projects loaded dynamically -->
     </div>
@@ -178,6 +228,7 @@
 
       <div class="contact-info">
         <h2>Let's Connect</h2>
+        <p class="section-subtitle">Collaborations, junior roles, or contract work—happy to chat.</p>
         <p>
           Open to entry level and junior software developer opportunities.
         </p>
@@ -252,6 +303,10 @@
       
     </div>
   </footer>
+
+  <a id="back-to-top" class="back-to-top" href="#top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 
   <!-- JavaScript -->
   <script src="assets/js/loader.js"></script>

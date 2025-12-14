@@ -1,22 +1,20 @@
 [
- 
- {
-  "title": "Institutional Space & Resource Management Platform (Capstone Project)",
-  "date": "Fall 2025",
-  "description": "A full-stack platform for managing campus spaces, room and locker reservations, and user communication. Features include real-time chat via WebSocket, secure JWT authentication, and admin dashboards for analytics and scheduling.",
-  "tech": ["React", "Vite", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "WebSocket", "JWT", "Docker", "REST API"],
-  "link": "https://github.com/Vraj-x2/capstone-frontend"
-},
- {
-  "title": "News AI – Smart Email-Based News Aggregator",
-  "date": "Spring 2025",
-  "description": "A full-stack Spring Boot application that aggregates news from 5+ APIs (GNews, NewsAPI, Reddit, NYTimes, AlphaVantage), filters and summarizes using Gemini AI, and sends a curated top 5 list to user emails with clickable links and summaries.",
-  "tech": ["Spring Boot", "Gemini AI", "Java Mail", "REST API", "Thymeleaf", "GNews", "Reddit API", "NYTimes API", "AlphaVantage", "NewsAPI"],
-  "link": "https://github.com/Vraj-x2/news-ai"
-}
-,
   {
-    "title": "Movie Explorer – OMDb + Gemini AI",
+    "title": "Institutional Space & Resource Management Platform (Capstone Project)",
+    "date": "Fall 2025",
+    "description": "A full-stack platform for managing campus spaces, room and locker reservations, and user communication. Features include real-time chat via WebSocket, secure JWT authentication, and admin dashboards for analytics and scheduling.",
+    "tech": ["React", "Vite", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "WebSocket", "JWT", "Docker", "REST API"],
+    "link": "https://github.com/Vraj-x2/capstone-frontend"
+  },
+  {
+    "title": "News AI - Smart Email-Based News Aggregator",
+    "date": "Spring 2025",
+    "description": "A full-stack Spring Boot application that aggregates news from 5+ APIs (GNews, NewsAPI, Reddit, NYTimes, AlphaVantage), filters and summarizes using Gemini AI, and sends a curated top 5 list to user emails with clickable links and summaries.",
+    "tech": ["Spring Boot", "Gemini AI", "Java Mail", "REST API", "Thymeleaf", "GNews", "Reddit API", "NYTimes API", "AlphaVantage", "NewsAPI"],
+    "link": "https://github.com/Vraj-x2/news-ai"
+  },
+  {
+    "title": "Movie Explorer - OMDb + Gemini AI",
     "date": "Spring 2025",
     "description": "AI-integrated web app that fetches movie details via OMDb API and provides Gemini-powered movie recommendations.",
     "tech": ["Spring Boot", "Thymeleaf", "Gemini AI", "OMDb API", "OkHttp"],
@@ -37,7 +35,7 @@
     "link": "https://github.com/Vraj-x2/microservice-gateway"
   },
   {
-    "title": "CampusConnect – Student Companion iOS App",
+    "title": "CampusConnect - Student Companion iOS App",
     "date": "Spring 2024",
     "description": "A Swift-based mobile app enabling students to manage events, navigate campus maps, join study groups, and plan courses.",
     "tech": ["Swift", "UIKit", "MapKit", "CoreData", "Storyboard"],

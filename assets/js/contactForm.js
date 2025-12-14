@@ -1,9 +1,10 @@
 // Back to top button
 const backToTop = () => {
     const button = document.getElementById('back-to-top');
+    if (!button) return;
     
     window.addEventListener('scroll', () => {
-        button.style.display = window.scrollY > 300 ? 'block' : 'none';
+        button.style.display = window.scrollY > 300 ? 'flex' : 'none';
     });
 
     button.addEventListener('click', (e) => {

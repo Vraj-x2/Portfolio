@@ -10,43 +10,45 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-// Eye movement animation
-document.addEventListener('mousemove', (e) => {
-    const eyes = document.querySelectorAll('.eye');
-    eyes.forEach((eye) => {
-        const rect = eye.getBoundingClientRect();
-        const eyeCenterX = rect.left + rect.width / 2;
-        const eyeCenterY = rect.top + rect.height / 2;
-        const angle = Math.atan2(e.clientY - eyeCenterY, e.clientX - eyeCenterX);
-        const maxDistance = rect.width / 4;
-        const distance = Math.min(maxDistance, Math.hypot(e.clientX - eyeCenterX, e.clientY - eyeCenterY));
-        
-        const pupil = eye.querySelector('.pupil');
-        pupil.style.transform = `translate(calc(-50% + ${Math.cos(angle) * distance}px), 
-                               calc(-50% + ${Math.sin(angle) * distance}px))`;
-    });
-});
+// Rotating dynamic stat on hero
+document.addEventListener('DOMContentLoaded', () => {
+    const numberEl = document.getElementById('stat-dynamic-number');
+    const labelEl = document.getElementById('stat-dynamic-label');
+    if (!numberEl || !labelEl) return;
 
-document.getElementById('show-more-btn').addEventListener('click', function() {
-    var moreProjects = document.getElementById('more-projects');
-    if (moreProjects.style.display === 'none' || moreProjects.style.display === '') {
-        moreProjects.style.display = 'grid';
-        this.textContent = 'Show Less';
-    } else {
-        moreProjects.style.display = 'none';
-        this.textContent = 'Show More';
-    }
-});
+    const variants = [
+        { number: 'Cloud+', label: 'Docker / AWS basics' },
+        { number: 'API', label: 'REST & GraphQL' },
+        { number: 'Security', label: 'JWT / Spring Security' },
+        { number: 'Perf', label: 'Caching / async' },
+        { number: 'Testing', label: 'JUnit / Postman' },
+        { number: 'CI/CD', label: 'GitHub Actions' },
+        { number: 'Data', label: 'MySQL / Postgres' },
+        { number: 'Frontend', label: 'React / Vite' },
+        { number: 'Patterns', label: 'Clean architecture' },
+        { number: 'Realtime', label: 'WebSocket / SSE' },
+        { number: 'AI', label: 'Gemini integrations' },
+        { number: 'Docs', label: 'OpenAPI / Swagger' },
+        { number: 'Monitoring', label: 'Metrics & logs' },
+        { number: 'Microservices', label: 'Gateway / discovery' },
+        { number: 'Deploy', label: 'Docker compose' }
+    ];
 
-const showMoreBtn = document.getElementById('show-more-btn');
-const moreProjects = document.getElementById('more-projects');
+    let idx = 0;
+    const rotate = () => {
+        numberEl.classList.add('stat-fade');
+        labelEl.classList.add('stat-fade');
 
-showMoreBtn.addEventListener('click', function() {
-    if (moreProjects.classList.contains('show')) {
-        moreProjects.classList.remove('show');
-        this.textContent = 'Show More';
-    } else {
-        moreProjects.classList.add('show');
-        this.textContent = 'Show Less';
-    }
+        setTimeout(() => {
+            const next = variants[idx % variants.length];
+            numberEl.textContent = next.number;
+            labelEl.textContent = next.label;
+            idx += 1;
+            numberEl.classList.remove('stat-fade');
+            labelEl.classList.remove('stat-fade');
+        }, 450);
+    };
+
+    rotate();
+    setInterval(rotate, 4200);
 });
