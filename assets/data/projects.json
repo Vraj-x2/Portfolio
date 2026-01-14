@@ -7,79 +7,79 @@
     "link": "https://github.com/Vraj-x2/capstone-frontend"
   },
   {
-    "title": "News AI - Smart Email-Based News Aggregator",
+    "title": "News AI – Live AI-Powered News Aggregation Platform",
     "date": "Spring 2025",
-    "description": "A full-stack Spring Boot application that aggregates news from 5+ APIs (GNews, NewsAPI, Reddit, NYTimes, AlphaVantage), filters and summarizes using Gemini AI, and sends a curated top 5 list to user emails with clickable links and summaries.",
-    "tech": ["Spring Boot", "Gemini AI", "Java Mail", "REST API", "Thymeleaf", "GNews", "Reddit API", "NYTimes API", "AlphaVantage", "NewsAPI"],
+    "description": "A production-deployed Spring Boot application that aggregates news from 5+ APIs, summarizes articles using Gemini AI, and delivers curated daily briefings via email. The backend is self-hosted on an Android device and exposed globally using Cloudflare Tunnel with a custom HTTPS domain, without using cloud VMs or static IPs.",
+    "tech": ["Spring Boot", "Java", "Gemini AI", "JWT", "Spring Security", "REST API", "H2 Database", "Cloudflare Tunnel", "Android (Termux)", "Custom Domain", "HTTPS"],
     "link": "https://github.com/Vraj-x2/news-ai"
   },
   {
-    "title": "Movie Explorer - OMDb + Gemini AI",
+    "title": "Movie Explorer – OMDb + Gemini AI",
     "date": "Spring 2025",
-    "description": "AI-integrated web app that fetches movie details via OMDb API and provides Gemini-powered movie recommendations.",
+    "description": "AI-integrated web application that fetches movie details via the OMDb API and generates personalized movie recommendations using Gemini AI.",
     "tech": ["Spring Boot", "Thymeleaf", "Gemini AI", "OMDb API", "OkHttp"],
     "link": "https://github.com/Vraj-x2/movie-explorer"
   },
   {
     "title": "Full-Stack Retail Management System",
     "date": "Fall 2023",
-    "description": "Spring Boot microservices with Angular front-end featuring JWT authentication and database management.",
-    "tech": ["Spring Boot", "Angular", "Spring Security", "REST API"],
+    "description": "A full-stack retail management system built with Spring Boot and Angular, featuring JWT authentication, role-based access, and database-backed inventory management.",
+    "tech": ["Spring Boot", "Angular", "Spring Security", "JWT", "REST API"],
     "link": "https://github.com/Vraj-x2/fullstack-retail-management"
   },
   {
     "title": "Gateway API Application",
     "date": "Spring 2024",
-    "description": "Spring Boot Gateway service connecting multiple microservices and serving an Angular-based front-end with proxy API routing.",
-    "tech": ["Spring Boot", "REST Proxy", "Microservices", "Angular"],
+    "description": "Spring Boot API Gateway service that routes and proxies requests to multiple microservices while serving an Angular-based front-end.",
+    "tech": ["Spring Boot", "Microservices", "REST Proxy", "API Gateway", "Angular"],
     "link": "https://github.com/Vraj-x2/microservice-gateway"
   },
   {
-    "title": "CampusConnect - Student Companion iOS App",
+    "title": "CampusConnect – Student Companion iOS App",
     "date": "Spring 2024",
-    "description": "A Swift-based mobile app enabling students to manage events, navigate campus maps, join study groups, and plan courses.",
+    "description": "An iOS application enabling students to manage events, navigate campus maps, join study groups, and plan academic schedules.",
     "tech": ["Swift", "UIKit", "MapKit", "CoreData", "Storyboard"],
     "link": "https://github.com/Vraj-x2/campusconnect-ios-app"
   },
   {
     "title": "Police Entity Microservice",
     "date": "Spring 2024",
-    "description": "A RESTful Spring Boot microservice managing police entity data with secure CRUD operations and service layer architecture.",
+    "description": "A RESTful Spring Boot microservice managing police entity data with layered architecture, secure CRUD operations, and H2 persistence.",
     "tech": ["Java", "Spring Boot", "REST API", "H2 Database", "Lombok"],
     "link": "https://github.com/Vraj-x2/microservice-police"
   },
   {
     "title": "Plushie Item Microservice",
     "date": "Spring 2024",
-    "description": "Spring Boot microservice managing plushie sales inventory with CRUD operations and service-interface implementation.",
+    "description": "Spring Boot microservice for managing plushie inventory with clean service-repository separation and RESTful CRUD endpoints.",
     "tech": ["Spring Boot", "REST API", "H2 Database", "Lombok"],
     "link": "https://github.com/Vraj-x2/microservice-plushie"
   },
   {
     "title": "Spring Boot Book Review App",
     "date": "Spring 2023",
-    "description": "A web application for managing book reviews with user authentication.",
+    "description": "A web application for managing and reviewing books with user authentication and server-side rendering.",
     "tech": ["Spring Boot", "Thymeleaf", "H2 Database"],
     "link": "https://github.com/Vraj-x2/book-review-app"
   },
   {
     "title": "Multiplayer Blackjack Game",
     "date": "Winter 2023",
-    "description": "Real-time multiplayer card game with deck management and turn-based mechanics using C# networking.",
+    "description": "A real-time multiplayer blackjack game featuring deck management, turn-based gameplay, and socket-based communication.",
     "tech": ["C#", ".NET Core", "Socket Programming", "Multiplayer Architecture"],
     "link": "https://github.com/Vraj-x2/blackjack-multiplayer"
   },
   {
     "title": "ShapeAnimator",
     "date": "Fall 2022",
-    "description": "Interactive WPF application for animating shapes with collision detection, shooting mechanics, and power-ups.",
-    "tech": ["C#", ".NET"],
+    "description": "An interactive WPF application with animated shapes, collision detection, shooting mechanics, and power-ups.",
+    "tech": ["C#", ".NET", "WPF"],
     "link": "https://github.com/Vraj-x2/shape-animator"
   },
   {
     "title": "Chess Clone",
     "date": "Fall 2022",
-    "description": "A two-player chess game with turn-based logic and piece movement mechanics.",
+    "description": "A two-player chess game implementing core movement rules and turn-based gameplay in the browser.",
     "tech": ["HTML", "CSS", "JavaScript"],
     "link": "https://github.com/Vraj-x2/chess-clone"
   }

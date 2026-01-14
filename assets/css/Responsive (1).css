@@ -1,0 +1,143 @@
+
+/* Responsive Adjustments */
+@media (min-width: 1200px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    #projects {
+        width: 95%;
+        padding: 3rem 0.5rem;
+    }
+    
+    .projects-container {
+        gap: 2rem;
+        padding: 1rem;
+    }
+    
+    .project-card {
+        min-height: 300px;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .project-info p {
+        -webkit-line-clamp: 5;
+        font-size: 0.92rem;
+    }
+    
+    .project-tech span {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        min-height: 280px;
+        max-height: none;
+    }
+    
+    .project-info p {
+        -webkit-line-clamp: 6;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#typing-text::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* ======================
+   RESPONSIVE DESIGN
+   ====================== */
+@media (max-width: 1024px) {
+    .expertise-container {
+        flex-wrap: wrap;
+    }
+    .expertise-column {
+        flex-basis: calc(50% - 0.75rem);
+    }
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(30, 30, 30, 0.9);
+        top: 60px;
+        left: 0;
+        display: none;
+        padding-top: 1rem;
+        z-index: 999;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .nav-links li a {
+        display: block;
+        padding: 0.5rem 0;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .expertise-column {
+        flex-basis: 100%;
+    }
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .theme-toggle {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .back-to-top {
+        bottom: 80px;
+        right: 20px;
+    }
+}
+
+

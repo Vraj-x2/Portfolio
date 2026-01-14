@@ -1,0 +1,88 @@
+[
+ 
+ {
+  "title": "Institutional Space & Resource Management Platform (Capstone Project)",
+  "date": "Fall 2025",
+  "description": "A full-stack platform for managing campus spaces, room and locker reservations, and user communication. Features include real-time chat via WebSocket, secure JWT authentication, and admin dashboards for analytics and scheduling.",
+  "tech": ["React", "Vite", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "WebSocket", "JWT", "Docker", "REST API"],
+  "link": "https://github.com/Vraj-x2/capstone-frontend"
+},
+ {
+  "title": "News AI – Smart Email-Based News Aggregator",
+  "date": "Spring 2025",
+  "description": "A full-stack Spring Boot application that aggregates news from 5+ APIs (GNews, NewsAPI, Reddit, NYTimes, AlphaVantage), filters and summarizes using Gemini AI, and sends a curated top 5 list to user emails with clickable links and summaries.",
+  "tech": ["Spring Boot", "Gemini AI", "Java Mail", "REST API", "Thymeleaf", "GNews", "Reddit API", "NYTimes API", "AlphaVantage", "NewsAPI"],
+  "link": "https://github.com/Vraj-x2/news-ai"
+}
+,
+  {
+    "title": "Movie Explorer – OMDb + Gemini AI",
+    "date": "Spring 2025",
+    "description": "AI-integrated web app that fetches movie details via OMDb API and provides Gemini-powered movie recommendations.",
+    "tech": ["Spring Boot", "Thymeleaf", "Gemini AI", "OMDb API", "OkHttp"],
+    "link": "https://github.com/Vraj-x2/movie-explorer"
+  },
+  {
+    "title": "Full-Stack Retail Management System",
+    "date": "Fall 2023",
+    "description": "Spring Boot microservices with Angular front-end featuring JWT authentication and database management.",
+    "tech": ["Spring Boot", "Angular", "Spring Security", "REST API"],
+    "link": "https://github.com/Vraj-x2/fullstack-retail-management"
+  },
+  {
+    "title": "Gateway API Application",
+    "date": "Spring 2024",
+    "description": "Spring Boot Gateway service connecting multiple microservices and serving an Angular-based front-end with proxy API routing.",
+    "tech": ["Spring Boot", "REST Proxy", "Microservices", "Angular"],
+    "link": "https://github.com/Vraj-x2/microservice-gateway"
+  },
+  {
+    "title": "CampusConnect – Student Companion iOS App",
+    "date": "Spring 2024",
+    "description": "A Swift-based mobile app enabling students to manage events, navigate campus maps, join study groups, and plan courses.",
+    "tech": ["Swift", "UIKit", "MapKit", "CoreData", "Storyboard"],
+    "link": "https://github.com/Vraj-x2/campusconnect-ios-app"
+  },
+  {
+    "title": "Police Entity Microservice",
+    "date": "Spring 2024",
+    "description": "A RESTful Spring Boot microservice managing police entity data with secure CRUD operations and service layer architecture.",
+    "tech": ["Java", "Spring Boot", "REST API", "H2 Database", "Lombok"],
+    "link": "https://github.com/Vraj-x2/microservice-police"
+  },
+  {
+    "title": "Plushie Item Microservice",
+    "date": "Spring 2024",
+    "description": "Spring Boot microservice managing plushie sales inventory with CRUD operations and service-interface implementation.",
+    "tech": ["Spring Boot", "REST API", "H2 Database", "Lombok"],
+    "link": "https://github.com/Vraj-x2/microservice-plushie"
+  },
+  {
+    "title": "Spring Boot Book Review App",
+    "date": "Spring 2023",
+    "description": "A web application for managing book reviews with user authentication.",
+    "tech": ["Spring Boot", "Thymeleaf", "H2 Database"],
+    "link": "https://github.com/Vraj-x2/book-review-app"
+  },
+  {
+    "title": "Multiplayer Blackjack Game",
+    "date": "Winter 2023",
+    "description": "Real-time multiplayer card game with deck management and turn-based mechanics using C# networking.",
+    "tech": ["C#", ".NET Core", "Socket Programming", "Multiplayer Architecture"],
+    "link": "https://github.com/Vraj-x2/blackjack-multiplayer"
+  },
+  {
+    "title": "ShapeAnimator",
+    "date": "Fall 2022",
+    "description": "Interactive WPF application for animating shapes with collision detection, shooting mechanics, and power-ups.",
+    "tech": ["C#", ".NET"],
+    "link": "https://github.com/Vraj-x2/shape-animator"
+  },
+  {
+    "title": "Chess Clone",
+    "date": "Fall 2022",
+    "description": "A two-player chess game with turn-based logic and piece movement mechanics.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "https://github.com/Vraj-x2/chess-clone"
+  }
+]
