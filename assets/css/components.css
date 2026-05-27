@@ -198,6 +198,18 @@
   align-self: flex-start;
 }
 
+.project-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.project-card .project-actions .view-project-btn,
+.project-card .project-actions .ghost-btn {
+  margin-top: 0;
+}
+
 .project-card.hidden {
   display: none;
 }
