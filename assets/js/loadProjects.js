@@ -21,7 +21,7 @@ fetch('assets/data/projects.json')
           <div class="project-tech">${techList}</div>
           <div class="project-actions">
             ${project.demo ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer" class="view-project-btn">Live Demo</a>` : ''}
-            <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="ghost-btn">View Code</a>
+            ${project.link ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="ghost-btn">View Code</a>` : ''}
           </div>
         </div>
       `;
