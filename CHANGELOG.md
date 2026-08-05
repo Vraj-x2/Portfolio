@@ -4,6 +4,7 @@ Tracking fixes applied from `AUDIT.md`, one concern per commit.
 
 ## Unreleased
 
+- **No more empty action-div gap on link-less project cards** (AUDIT.md #11, Medium): 4 of 7 projects have neither `link` nor `demo`; `loadProjects.js` now omits the `.project-actions` wrapper entirely when there's nothing to put in it, instead of rendering an empty div with top margin.
 - **Theme choice now persists** (AUDIT.md #10, Medium): theme reset to dark on every reload. Added an inline `<head>`/early-`<body>` script that applies the saved theme from `localStorage` before paint (avoids flash), and `themeToggle.js` now writes the choice to `localStorage` on toggle and syncs the moon/sun icons to match on load.
 - **Renamed `contactForm.js` → `main.js`** (AUDIT.md #9, Medium): the file actually initialized back-to-top, typing effect, theme toggle, and the contact form (app bootstrap), not just the contact form. Renamed to reflect its real role; updated `index.html` script tag and README.
 - **Aligned displayed contact email** (AUDIT.md #8, Medium): site showed `vrajcontractor205@gmail.com`, README showed `vrajcontractor20@gmail.com`. Confirmed with user — both are valid, keeping `vrajcontractor20@gmail.com`; updated `index.html` contact section to match README.

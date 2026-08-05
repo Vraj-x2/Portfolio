@@ -13,16 +13,18 @@ fetch('assets/data/projects.json')
 
       const techList = project.tech.map(tech => `<span>${tech}</span>`).join('');
 
+      const actions = [
+        project.demo ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer" class="view-project-btn">Live Demo</a>` : '',
+        project.link ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="ghost-btn">View Code</a>` : ''
+      ].join('');
+
       card.innerHTML = `
         <div class="project-info">
           <h3>${project.title}</h3>
           <p class="project-date">${project.date}</p>
           <p>${project.description}</p>
           <div class="project-tech">${techList}</div>
-          <div class="project-actions">
-            ${project.demo ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer" class="view-project-btn">Live Demo</a>` : ''}
-            ${project.link ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="ghost-btn">View Code</a>` : ''}
-          </div>
+          ${actions ? `<div class="project-actions">${actions}</div>` : ''}
         </div>
       `;
 
