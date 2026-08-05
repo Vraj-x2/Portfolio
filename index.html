@@ -66,6 +66,12 @@
 </head>
 
 <body id="top">
+  <script>
+    // Apply saved theme immediately (before paint) to avoid a flash of the wrong theme.
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-theme');
+    }
+  </script>
 
   <!-- Theme Toggle Button -->
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">

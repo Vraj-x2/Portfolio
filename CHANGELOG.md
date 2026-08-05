@@ -4,6 +4,7 @@ Tracking fixes applied from `AUDIT.md`, one concern per commit.
 
 ## Unreleased
 
+- **Theme choice now persists** (AUDIT.md #10, Medium): theme reset to dark on every reload. Added an inline `<head>`/early-`<body>` script that applies the saved theme from `localStorage` before paint (avoids flash), and `themeToggle.js` now writes the choice to `localStorage` on toggle and syncs the moon/sun icons to match on load.
 - **Renamed `contactForm.js` → `main.js`** (AUDIT.md #9, Medium): the file actually initialized back-to-top, typing effect, theme toggle, and the contact form (app bootstrap), not just the contact form. Renamed to reflect its real role; updated `index.html` script tag and README.
 - **Aligned displayed contact email** (AUDIT.md #8, Medium): site showed `vrajcontractor205@gmail.com`, README showed `vrajcontractor20@gmail.com`. Confirmed with user — both are valid, keeping `vrajcontractor20@gmail.com`; updated `index.html` contact section to match README.
 - **Added sitemap.xml + robots.txt** (AUDIT.md #7, High): neither existed. Added a minimal one-URL sitemap and a robots.txt allowing all crawlers and pointing at it.
