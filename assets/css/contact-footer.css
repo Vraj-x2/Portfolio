@@ -118,3 +118,40 @@ footer {
   color: #1e1e1e;
   transform: translateY(-2px);
 }
+
+/* ======================
+   LIGHT THEME OVERRIDES
+   ====================== */
+.light-theme .contact-info p {
+  color: #333333;
+}
+
+.light-theme .contact-form label {
+  color: #444444;
+}
+
+.light-theme .contact-form input,
+.light-theme .contact-form textarea {
+  background: rgba(0, 0, 0, 0.04);
+  color: #1c1c1c;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .contact-form input::placeholder,
+.light-theme .contact-form textarea::placeholder {
+  color: #777777;
+}
+
+.light-theme .contact-form input:focus,
+.light-theme .contact-form textarea:focus {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.light-theme .social-media a {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .social-media a:hover {
+  background: var(--primary-color);
+  color: #1e1e1e;
+}
