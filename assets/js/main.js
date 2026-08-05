@@ -36,7 +36,7 @@ const contactForm = () => {
             } else {
                 throw await response.json();
             }
-        } catch (error) {
+        } catch {
             status.textContent = 'Oops! There was a problem sending your message.';
             status.style.color = '#ff4444';
         }

@@ -1,3 +1,4 @@
+/* exported themeToggle */
 // Theme toggle functionality
 const themeToggle = () => {
     const themeButton = document.getElementById('theme-toggle');

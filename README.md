@@ -14,7 +14,7 @@ Live at: https://vraj-x2.github.io/Portfolio/
 ## Structure
 
 - index.html - main page
-- assets/css/ - stylesheets split by concern (base, layout, components, sections, animations, contact-footer)
+- assets/css/ - stylesheets split by concern (base, layout, components, sections, animations, contact-footer, responsive)
 - assets/js/ - vanilla JS modules (smoothScroll, mobileNav, animations, typingEffect, themeToggle, main, loadProjects)
 - assets/data/projects.json - project list
 - assets/docs/ - resume PDF
@@ -29,6 +29,18 @@ python3 -m http.server 8000
 ```
 
 Then visit http://localhost:8000
+
+## Linting
+
+No build step, but `eslint` / `stylelint` / `html-validate` are available as dev dependencies:
+
+```
+npm install
+npm run lint       # runs all three
+npm run lint:js
+npm run lint:css
+npm run lint:html
+```
 
 ## Contact
 

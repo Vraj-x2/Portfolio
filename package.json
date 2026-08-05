@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio site for Vraj Contractor, Junior Full Stack Developer based in the Greater Toronto Area.",
+  "scripts": {
+    "lint:js": "eslint assets/js",
+    "lint:css": "stylelint \"assets/css/**/*.css\"",
+    "lint:html": "html-validate index.html",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vraj-x2/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vraj-x2/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Vraj-x2/Portfolio#readme",
+  "devDependencies": {
+    "eslint": "^10.8.0",
+    "html-validate": "^10.9.0",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}

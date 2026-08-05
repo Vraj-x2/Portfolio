@@ -1,3 +1,4 @@
+/* exported typingEffect */
 // Typing effect
 const typingEffect = () => {
     const texts = [
