@@ -1,0 +1,129 @@
+/* ======================
+   MOBILE NAV TOGGLE
+   ====================== */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--dark-text);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.light-theme .nav-toggle {
+  color: #1f1f1f;
+}
+
+/* ======================
+   BREAKPOINT: TABLET / MOBILE (<=768px)
+   ====================== */
+@media (max-width: 768px) {
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    background: rgba(12, 12, 16, 0.97);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--card-border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-links.open {
+    max-height: 320px;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 1rem;
+  }
+
+  .light-theme .nav-links {
+    background: rgba(255, 255, 255, 0.97);
+  }
+
+  /* Hero */
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-right {
+    order: -1;
+  }
+
+  /* About */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Expertise */
+  .expertise-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* ======================
+   BREAKPOINT: SMALL MOBILE (<=480px)
+   ====================== */
+@media (max-width: 480px) {
+  .animated-title {
+    font-size: 2.2rem;
+  }
+
+  .animated-subtitle {
+    font-size: 1.1rem;
+  }
+
+  section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .expertise-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-visual {
+    margin: 0 auto;
+  }
+
+  .about-image img {
+    width: 160px;
+    height: 160px;
+  }
+}

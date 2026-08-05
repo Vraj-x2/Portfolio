@@ -57,6 +57,7 @@
   <link rel="stylesheet" href="assets/css/sections.css" />
   <link rel="stylesheet" href="assets/css/animations.css" />
   <link rel="stylesheet" href="assets/css/contact-footer.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 
   <!-- Google Fonts + FontAwesome -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -80,7 +81,10 @@
         <div class="logo">
           <a href="#about">Vraj Contractor</a>
         </div>
-        <ul class="nav-links">
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#expertise">Expertise</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -346,6 +350,7 @@
 
   <!-- JavaScript -->
   <script src="assets/js/smoothScroll.js"></script>
+  <script src="assets/js/mobileNav.js"></script>
   <script src="assets/js/animations.js"></script>
   <script src="assets/js/typingEffect.js"></script>
   <script src="assets/js/themeToggle.js"></script>
