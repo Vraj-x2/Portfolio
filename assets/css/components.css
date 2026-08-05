@@ -493,17 +493,6 @@
   font-size: 0.9rem;
 }
 
-#stat-dynamic-number,
-#stat-dynamic-label {
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  display: block;
-}
-
-.stat-fade {
-  opacity: 0.12;
-  transform: translateY(6px);
-}
-
 /* ======================
    BACK TO TOP
    ====================== */
