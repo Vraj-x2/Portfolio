@@ -15,7 +15,7 @@ Live at: https://vraj-x2.github.io/Portfolio/
 
 - index.html - main page
 - assets/css/ - stylesheets split by concern (base, layout, components, sections, animations, contact-footer)
-- assets/js/ - vanilla JS modules (smoothScroll, animations, typingEffect, themeToggle, contactForm, loadProjects)
+- assets/js/ - vanilla JS modules (smoothScroll, mobileNav, animations, typingEffect, themeToggle, main, loadProjects)
 - assets/data/projects.json - project list
 - assets/docs/ - resume PDF
 - assets/images/ - photos and favicon
