@@ -4,6 +4,7 @@ Tracking fixes applied from `AUDIT.md`, one concern per commit.
 
 ## Unreleased
 
+- **Aligned displayed contact email** (AUDIT.md #8, Medium): site showed `vrajcontractor205@gmail.com`, README showed `vrajcontractor20@gmail.com`. Confirmed with user — both are valid, keeping `vrajcontractor20@gmail.com`; updated `index.html` contact section to match README.
 - **Added sitemap.xml + robots.txt** (AUDIT.md #7, High): neither existed. Added a minimal one-URL sitemap and a robots.txt allowing all crawlers and pointing at it.
 - **Removed dead rotating-stat code** (AUDIT.md #6, High): `animations.js` had a ~40-line block driving `#stat-dynamic-number`/`#stat-dynamic-label`, which no longer exist in `index.html` (hero now uses static `.stat-number`/`.stat-label`). It early-returned every load — deleted the JS block and its matching dead CSS (`#stat-dynamic-number`, `#stat-dynamic-label`, `.stat-fade`) in `components.css`.
 - **Optimized hero/about image** (AUDIT.md #5, High): `professional-headshot.jpg` was actually PNG data (1024×1024, 656 KB) saved with a `.jpg` extension, displayed at 240×240. Re-encoded as a true JPEG at 480×480 (2x retina) via .NET `System.Drawing` (no ImageMagick/PIL available in this environment) — now 20.7 KB. Added explicit `width`/`height`/`loading="lazy"` to the `<img>` tag to prevent layout shift. Same file is also used as the OG/Twitter preview image; crop/framing unchanged, just far lighter.
