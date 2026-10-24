@@ -1,48 +1,97 @@
 [
   {
-    "title": "InstiManage - Institutional Space & Resource Management Platform",
-    "date": "Fall 2025",
-    "description": "Full-stack platform for managing campus spaces, room and locker reservations, and user communication. Real-time chat via WebSocket, JWT authentication, admin dashboards for analytics and scheduling. Backend self-hosted on a Samsung Galaxy A23 running Termux with Spring Boot; database on a separate Realme device running MariaDB; both exposed globally via Cloudflare Tunnel.",
-    "tech": ["React", "Vite", "TypeScript", "Tailwind CSS", "Spring Boot", "MariaDB", "WebSocket", "JWT", "Cloudflare Tunnel", "Android (Termux)"],
-    "link": "https://github.com/Vraj-x2/capstone-frontend"
+    "title": "Expiry Tracker - Production Inventory App",
+    "date": "2026",
+    "description": "Spring Boot service tracking 50+ near-expiry products, used daily by 8 staff and cutting missed-expiry write-offs by 80%. Self-hosted over HTTPS via Cloudflare Tunnel with 99.9% uptime across 6+ months.",
+    "tech": [
+      "Spring Boot",
+      "Java",
+      "REST API",
+      "Cloudflare Tunnel",
+      "Android (Termux)"
+    ],
+    "link": "https://github.com/Vraj-x2/expiry-tracker",
+    "demo": "https://expiry.vrajcloud.dev"
   },
   {
     "title": "News AI - Self-Hosted AI News Aggregator",
     "date": "Spring 2025",
-    "description": "Spring Boot application that aggregates news from 5+ APIs, summarizes articles using Gemini AI, and delivers curated daily email briefings. Production-deployed on an Android device via Termux, exposed globally with Cloudflare Tunnel and a custom HTTPS domain. No cloud VM, no static IP.",
-    "tech": ["Spring Boot", "Java", "Gemini AI", "JWT", "Spring Security", "REST API", "Cloudflare Tunnel", "Android (Termux)"],
+    "description": "AI service that aggregates and summarizes 100+ daily articles from 5 sources with Gemini AI, delivering daily digests to 25+ subscribers via Spring @Scheduled jobs and JavaMail with retry on failed sends.",
+    "tech": [
+      "Spring Boot",
+      "Java",
+      "Gemini AI",
+      "JWT",
+      "Spring Security",
+      "REST API",
+      "Cloudflare Tunnel",
+      "Android (Termux)"
+    ],
     "demo": "https://api.vrajcloud.dev"
   },
   {
-    "title": "Expiry Tracker - Production Inventory App",
-    "date": "2026",
-    "description": "Spring Boot service for tracking product expiry dates, deployed live for real-world use. Runs on the same Android-based home server stack with HTTPS via Cloudflare Tunnel.",
-    "tech": ["Spring Boot", "Java", "REST API", "Cloudflare Tunnel", "Android (Termux)"],
-    "link": "https://github.com/Vraj-x2/expiry-tracker",
-    "demo": "https://expiry.vrajcloud.dev"
+    "title": "InstiManage - Institutional Space & Resource Management Platform",
+    "date": "Fall 2025",
+    "description": "Full-stack platform for managing campus spaces, room and locker reservations, and user communication. Real-time chat via WebSocket, JWT authentication, admin dashboards for analytics and scheduling. Backend self-hosted on a Samsung Galaxy A23 running Termux with Spring Boot; database on a separate Realme device running MariaDB; both exposed globally via Cloudflare Tunnel.",
+    "tech": [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Spring Boot",
+      "MariaDB",
+      "WebSocket",
+      "JWT",
+      "Cloudflare Tunnel",
+      "Android (Termux)"
+    ],
+    "link": "https://github.com/Vraj-x2/capstone-frontend"
   },
   {
     "title": "Multiplayer Blackjack - Real-Time Web Game",
     "date": "Spring 2024",
     "description": "Real-time multiplayer blackjack with WebSocket-based gameplay, turn management, and deck logic. Spring Boot backend, Angular frontend.",
-    "tech": ["Spring Boot", "Angular", "WebSocket", "Java", "TypeScript"]
-  },
-  {
-    "title": "DevMatch - Developer Collaboration Platform",
-    "date": "2024",
-    "description": "JHipster-generated full-stack platform for matching developers on projects. React frontend, Spring Boot backend, full auth and role management.",
-    "tech": ["JHipster", "Spring Boot", "React", "Java", "REST API"]
-  },
-  {
-    "title": "Full-Stack Retail Management System",
-    "date": "Fall 2023",
-    "description": "Retail management system with Spring Boot and Angular. JWT authentication, role-based access, database-backed inventory.",
-    "tech": ["Spring Boot", "Angular", "Spring Security", "JWT", "REST API"]
+    "tech": [
+      "Spring Boot",
+      "Angular",
+      "WebSocket",
+      "Java",
+      "TypeScript"
+    ]
   },
   {
     "title": "UPC Collector - Android Barcode App",
     "date": "2024",
     "description": "Android application built with Kotlin and Jetpack Compose for scanning and cataloging UPC barcodes. Modern declarative UI, camera integration, persistent local storage.",
-    "tech": ["Kotlin", "Jetpack Compose", "Android", "CameraX"]
+    "tech": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Android",
+      "CameraX"
+    ]
+  },
+  {
+    "title": "Full-Stack Retail Management System",
+    "date": "Fall 2023",
+    "description": "Retail management system with Spring Boot and Angular. JWT authentication, role-based access, database-backed inventory.",
+    "tech": [
+      "Spring Boot",
+      "Angular",
+      "Spring Security",
+      "JWT",
+      "REST API"
+    ]
+  },
+  {
+    "title": "DevMatch - Developer Collaboration Platform",
+    "date": "2024",
+    "description": "JHipster-generated full-stack platform for matching developers on projects. React frontend, Spring Boot backend, full auth and role management.",
+    "tech": [
+      "JHipster",
+      "Spring Boot",
+      "React",
+      "Java",
+      "REST API"
+    ]
   }
 ]

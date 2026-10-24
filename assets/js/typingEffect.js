@@ -2,9 +2,9 @@
 // Typing effect
 const typingEffect = () => {
     const texts = [
-        'Full Stack Java Developer',
-        'Spring Boot & React Engineer',
-        'Software Engineering Graduate'
+        'Full-Stack Developer @ TCS Canada',
+        'Angular / React + Spring Boot',
+        'Builder of self-hosted apps'
     ];
    
     const typingText = document.getElementById('typing-text');

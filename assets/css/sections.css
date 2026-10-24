@@ -58,7 +58,7 @@ section h2::after {
 
 .expertise-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -155,4 +155,67 @@ section h2 {
 
 section h2::after {
   opacity: 0.8;
+}
+
+/* ======================
+   EXPERIENCE SECTION
+   ====================== */
+#experience {
+  max-width: 1200px;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.experience-card {
+  text-align: left;
+}
+
+.experience-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.experience-header h3 {
+  margin: 0;
+}
+
+.experience-date {
+  color: #bdbdbd;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.experience-org {
+  color: #e8e8e8;
+  font-weight: 600;
+  margin: 0.4rem 0 1rem;
+}
+
+.experience-points {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+.experience-points li + li {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-education {
+  color: #bdbdbd;
+  font-size: 0.95rem;
 }
